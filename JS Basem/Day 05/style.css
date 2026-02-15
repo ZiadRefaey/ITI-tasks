@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  min-width: 30%;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 50%;
+}
+.input-wrapper {
+  width: 100%;
+}
+form,
+table {
+  width: 100%;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #cfcfcf;
+  outline: none;
+}
+input:focus {
+  border-color: dodgerblue;
+}
+.warning {
+  border-color: #ed4337;
+  color: #ed4337;
+}
+.buttons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+button {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 0;
+  cursor: pointer;
+  color: white;
+}
+button:hover {
+  opacity: 0.8;
+}
+.btn-reset {
+  background-color: #ed4337;
+}
+.btn-submit {
+  background-color: #22c55e;
+}
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: system-ui, sans-serif;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb; /* outer border */
+}
+
+thead {
+  background: #f8fafc;
+}
+
+th,
+td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  font-weight: 600;
+  color: #0f172a;
+  font-size: 14px;
+}
+
+th:not(:last-child),
+td:not(:last-child) {
+  border-right: 1px solid #e5e7eb;
+}
+
+td {
+  color: #334155;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: #f1f5f9;
+}

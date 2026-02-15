@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        overflow: hidden;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        width: 50%;
+        height: 50%;
+        background-color: red;
+        border: 2px solid black;
+        position: relative;
+      }
+      .image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .hover-box {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+      }
+      .hover-box:hover {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+      p {
+        opacity: 0;
+        transition: all 0.3s;
+      }
+      .hover-box:hover p {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="/assets/pexels-alexravvas-20727529.jpg" class="image" />
+        <div class="hover-box"><p>Hover</p></div>
+      </div>
+      <div class="card">
+        <img
+          src="/assets/pexels-duc-tinh-ngo-2147637857-29697943.jpg"
+          class="image"
+        />
+        <div class="hover-box"><p>Hover</p></div>
+      </div>
+      <div class="card">
+        <img src="/assets/pexels-insidesout-14478369.jpg" class="image" />
+        <div class="hover-box"><p>Hover</p></div>
+      </div>
+      <div class="card">
+        <img
+          src="/assets/pexels-maksim-smirnov-27565989-32234335.jpg"
+          class="image"
+        />
+        <div class="hover-box"><p>Hover</p></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 90vw;
+        height: 80vh;
+        margin: 0 auto;
+        position: relative;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+      }
+      .player-1,
+      .player-2 {
+        height: 300px;
+        width: auto;
+        bottom: 0;
+      }
+      .player-1 {
+        left: 0;
+      }
+      .player-2 {
+        right: 0;
+      }
+      .grass {
+        bottom: 0;
+        width: 100%;
+        z-index: -100;
+      }
+      .ball {
+        bottom: 0;
+        left: 200px;
+        width: 75px;
+        height: 75px;
+        animation-name: ball;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+      }
+
+      @keyframes ball {
+        0% {
+          bottom: 0;
+          left: 200px;
+        }
+        45% {
+          bottom: 0;
+          left: calc(100% - 200px);
+        }
+        55% {
+          transform: rotate(360deg);
+        }
+        100% {
+          bottom: 0;
+          left: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="player-1" src="assets/player1.png" alt="" />
+      <img class="grass" src="assets/grass.png" alt="" />
+      <img class="ball" src="assets/ball.png" alt="" />
+      <img class="player-2" src="assets/player2.png" alt="" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="color" class="color" />
+    <button onclick="submit()">Click me</button>
+    <canvas class="canvas"></canvas>
+  </body>
+  <script>
+    const c = document.querySelector(".canvas");
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    const ctx = c.getContext("2d");
+    const color = document.querySelector(".color");
+    function getRandom(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+    function submit() {
+      for (let i = 0; i < 100; i++) {
+        const x = getRandom(0, c.width);
+        const y = getRandom(0, c.height);
+        ctx.beginPath();
+        ctx.strokeStyle = `${color.value}`;
+        ctx.arc(x, y, 20, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+    }
+  </script>
+</html>

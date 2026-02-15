@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --faded: rgba(255, 255, 255, 0.5);
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  overflow-x: hidden;
+}
+main {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 128px;
+}
+.content-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding: 104px;
+}
+
+.bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+.bg-img-wrapper::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+.content-headers {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.content-headers h1 {
+  font-size: 55px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.content-headers h2 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.card-wrapper {
+  position: relative;
+  border: 1px solid var(--faded);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: rgba(0, 0, 0, 0.26);
+  backdrop-filter: blur(30px);
+  flex: 1;
+}
+.card-img {
+  width: 177px;
+  height: 171px;
+  border: 1px solid var(--faded);
+  object-fit: cover;
+  border-radius: 30px;
+}
+.card-content {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 32px;
+  width: 100%;
+  gap: 16px;
+}
+
+.card-header {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+.card-stats {
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 32px;
+}
+.card-control {
+  color: white;
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+  background-color: #40e2c1;
+  border-radius: 999px;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  transform: translateX(50%);
+  border: none;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 64px;
+  margin-top: 40px;
+}
+.card-timer {
+  position: absolute;
+  bottom: 16px;
+  right: 32px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: #4ac08f;
+  outline: none;
+}
+
+/* Chrome, Edge, Safari */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #2fb4fc;
+  cursor: pointer;
+  border: none;
+}
+
+/* Firefox */
+.slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #2fb4fc;
+  cursor: pointer;
+  border: none;
+}
+
+/* Firefox track */
+.slider::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+.progress-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.controls-section {
+  background-image: linear-gradient(to right, #151515, #170525);
+  position: relative;
+}
+.controls-container {
+  padding: 24px 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.controls-headers {
+  min-width: 210px;
+}
+.controls-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.controls-btns button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.controls-btns button:hover {
+  color: #4ac08f;
+}
+.volume-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.controls-RHS {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 12px;
+  flex-direction: column;
+}
+.hidden {
+  display: none;
+}
+.volume-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 24px;
+}
+.volume-btn:hover {
+  color: #40e2c1;
+}

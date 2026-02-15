@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: none;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        color: white;
+        background: green;
+        animation-name: circle;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        margin: 40px auto;
+      }
+      .upper-bg {
+        border: 8px solid rgb(195, 195, 195);
+        width: 99%;
+        height: 100px;
+        border-bottom: 8px dotted rgb(225, 225, 225);
+        background: rgb(74, 74, 74);
+      }
+      .lower-bg {
+        border: 8px solid rgb(195, 195, 195);
+        border-top: none;
+        height: 100px;
+        width: 99%;
+        background: rgb(74, 74, 74);
+      }
+      @keyframes circle {
+        from {
+          transform: rotate(45deg);
+        }
+        to {
+          transform: rotate(-45deg);
+        }
+      }
+      img {
+        position: absolute;
+        top: 120px;
+        left: 20px;
+        animation-name: image;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+      @keyframes image {
+        0%,
+        100% {
+          left: 20px;
+          transform: rotateY(0deg);
+        }
+
+        48% {
+          left: calc(100% - 200px);
+          transform: rotateY(0deg);
+        }
+
+        52% {
+          left: calc(100% - 200px);
+          transform: rotateY(180deg);
+        }
+
+        100% {
+          left: 20px;
+          transform: rotateY(180deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle"><p>لف واارجع تاني</p></div>
+    <div class="upper-bg"></div>
+    <div class="lower-bg"></div>
+    <img src="/—Pngtree—cartoon characters ride bicycles_4141664.png" alt="" />
+  </body>
+</html>

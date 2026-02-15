@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#services {
+  width: 0px;
+  height: 5vh;
+  background: beige;
+}
+h2,
+p {
+  /* display: none; */
+  margin-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 24px;
+  display: none;
+}
+p {
+  max-width: 800px;
+}
+.imgs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  flex-direction: row;
+}
+.img-item {
+  width: 300px;
+  height: 500px;
+  object-fit: contain;
+}
+.img-wrapper {
+  display: none;
+}

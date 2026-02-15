@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .paragraph {
+        max-width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <span>R:</span>
+    <input
+      type="range"
+      class="red"
+      min="0"
+      max="255"
+      step="1"
+      value="0"
+      oninput="changeRed()"
+    />
+    <span class="r-value">0</span>
+    <span>G:</span>
+
+    <input
+      type="range"
+      class="green"
+      min="0"
+      max="255"
+      step="1"
+      value="0"
+      oninput="changeGreen()"
+    />
+    <span class="g-value">0</span>
+    <span>B:</span>
+    <input
+      type="range"
+      class="blue"
+      min="0"
+      max="255"
+      step="1"
+      value="0"
+      oninput="changeBlue()"
+    />
+    <span class="b-value">0</span>
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dicta nobis
+      eveniet, quam fugiat corporis alias tempore vel minus optio ad deserunt id
+      beatae nemo aperiam dolor amet ex debitis.
+    </p>
+  </body>
+  <script src="script.js"></script>
+</html>

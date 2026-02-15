@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="input-wrapper">
+          <input
+            class="input-name"
+            type="text"
+            name="name"
+            placeholder="Username"
+          />
+          <span class="name-validation warning"></span>
+        </div>
+
+        <div class="input-wrapper">
+          <input class="input-age" type="text" name="age" placeholder="Age" />
+          <span class="age-validation warning"></span>
+        </div>
+
+        <div class="input-wrapper">
+          <input
+            class="input-email"
+            type="text"
+            name="email"
+            placeholder="Email"
+          />
+          <span class="email-validation warning"></span>
+        </div>
+        <div class="buttons-wrapper">
+          <button class="btn-submit" type="submit">Submit</button>
+          <button class="btn-reset" type="reset">Reset</button>
+        </div>
+      </form>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

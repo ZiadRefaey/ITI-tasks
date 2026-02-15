@@ -1,0 +1,13 @@
+import Rectangle from "./rectangle.js";
+import Square from "./square.js";
+import Circle from "./circle.js";
+const rectangle = new Rectangle(10, 20);
+console.log(rectangle);
+console.log(rectangle.calcPerimeter());
+const square = new Square(20);
+console.log(square);
+console.log(square.calcArea());
+const circle = new Circle(10);
+console.log(circle);
+console.log(circle.calcPerimeter());
+console.log(circle.calcArea());

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <form class="form">
+        <input class="username" type="text" placeholder="Username" required />
+        <input class="email" type="email" placeholder="email" required />
+        <label for="remember">Remember me</label>
+        <input type="checkbox" id="remember" />
+        <input type="submit" class="submit" />
+      </form>
+    </main>
+    <script>
+      const btn = document.querySelector(".submit");
+      var cbox = document.querySelector("#remember");
+      var username = document.querySelector(".username");
+      var email = document.querySelector(".email");
+
+      btn.addEventListener("click", function (e) {
+        if (cbox.checked) {
+          localStorage.name = username.value;
+          localStorage.email = email.value;
+        }
+      });
+    </script>
+  </body>
+</html>

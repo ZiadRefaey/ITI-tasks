@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-search">
+      <div class="top-search-inner">
+        <input
+          type="search"
+          class="search-input"
+          placeholder="Search products..."
+        />
+      </div>
+    </div>
+    <div class="loader-page">
+      <span class="loader"></span>
+    </div>
+    <div class="page">
+      <aside class="filters">
+        <div class="filters-header">
+          <h2>Filters</h2>
+          <svg class="filter-icon" viewBox="0 0 24 24">
+            <path d="M3 5h18l-7 8v6l-4-2v-4z" />
+          </svg>
+        </div>
+
+        <div class="filter-section">
+          <div class="filter-title">
+            <span>Category</span>
+          </div>
+
+          <div class="checkbox-list"></div>
+        </div>
+
+        <div class="sort-section">
+          <h3 class="sort-title">Sort by price</h3>
+
+          <label class="rb">
+            <input type="radio" value="none" name="price-sort" checked />
+            <span class="dot"></span>
+            No sort
+          </label>
+
+          <label class="rb">
+            <input type="radio" value="asc" name="price-sort" />
+            <span class="dot"></span>
+            Price asc
+          </label>
+
+          <label class="rb">
+            <input type="radio" value="desc" name="price-sort" />
+            <span class="dot"></span>
+            Price desc
+          </label>
+        </div>
+
+        <button class="apply-btn">Apply Filters</button>
+      </aside>
+
+      <main class="products"></main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

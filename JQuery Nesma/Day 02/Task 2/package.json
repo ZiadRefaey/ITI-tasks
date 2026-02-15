@@ -1,0 +1,16 @@
+{
+  "name": "task-2",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --port=5500"
+  },
+  "dependencies": {
+    "jquery": "^4.0.0"
+  }
+}

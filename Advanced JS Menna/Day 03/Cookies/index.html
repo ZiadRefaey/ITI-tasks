@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div class="input-container">
+        <label for="name">Enter your name:</label>
+        <input type="text" required id="name" class="username" />
+      </div>
+      <div class="input-container">
+        <label for="age">Enter your age:</label>
+        <input id="age" class="age" type="number" required />
+      </div>
+      <div class="input-container">
+        <label>Please select your gender:</label>
+        <input type="radio" id="male" name="gender" value="male" checked />
+        <label for="male"><img src="/assets/male.avif" /></label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female"><img src="/assets/female.jpg" /></label>
+      </div>
+      <div class="input-container">
+        <label for="color">select your favorite color</label>
+        <select>
+          <option value="#ff0000">red</option>
+          <option value="#00ff00">green</option>
+          <option value="#0000ff">blue</option>
+        </select>
+      </div>
+      <button class="btn-submit" type="submit">Register</button>
+    </form>
+  </body>
+  <script src="cookies.js"></script>
+</html>

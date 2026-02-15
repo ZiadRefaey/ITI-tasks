@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #333;
+
+  font-variation-settings: "wdth" 100;
+}
+
+/* stop the page itself from scrolling */
+body {
+  overflow: hidden;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 20vw 1fr;
+  height: 100vh;
+}
+
+/* LHS – users list */
+.sidebar {
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  padding: 8px 12px;
+}
+
+/* RHS – posts */
+.user {
+  width: 100%;
+  height: 75px;
+  cursor: pointer;
+  border-radius: 16px;
+  background: #bbbfc7;
+  margin-bottom: 10px;
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active-user {
+  background-color: white;
+}
+.user:hover {
+  background-color: white;
+}
+.post {
+  width: 100%;
+}
+.content {
+  overflow-y: auto;
+  padding: 12px 24px;
+}
+.post {
+  border-top: 1px solid #dfe3ea;
+  border-bottom: 1px solid #dfe3ea;
+  padding: 24px 12px;
+  color: white;
+}
+h1 {
+  font-size: 16px;
+}
+.error {
+  color: red;
+}
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.tags-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.tag {
+  padding: 4px 12px;
+  background-color: #bbbfc7;
+  color: #333;
+  border-radius: 12px;
+  font-size: 16px;
+}
+.post-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.post-content {
+  font-size: 16px;
+  font-weight: 400;
+  color: #dfe3ea;
+}
+.post-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 32px;
+  margin-top: 40px;
+}
+.reaction-container {
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  border: 1px solid #dfe3ea;
+}
+.reaction-container span {
+  padding-right: 12px;
+  border-right: solid 1px #dfe3ea;
+}
+.reaction-container i {
+  padding-left: 12px;
+}
+/* https://cssloaders.github.io/ */
+.loader-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.error {
+  color: red;
+  font-weight: 500;
+}
+.empty-posts {
+  font-size: 24px;
+  color: white;
+}
