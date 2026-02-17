@@ -1,0 +1,123 @@
+/* .parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 12px;
+}
+.parent > div {
+  background-color: #f3f3f3;
+  border: solid 1px;
+  border-radius: 4px;
+}
+.child1 {
+  grid-column: 1/5;
+}
+.child2,
+.child3,
+.child4,
+.child5 {
+}
+.child6 {
+  grid-column: 1/3;
+}
+.child7 {
+  grid-column: 3/5;
+}
+.child8 {
+  grid-column: 1/5;
+}
+@media screen and (min-width: 767.1px) and (max-width: 1000px) {
+  .child1 {
+    grid-column: 1/5;
+  }
+  .child2 {
+    grid-column: 1/3;
+  }
+  .child3 {
+    grid-column: 3/5;
+  }
+  .child4 {
+    grid-column: 1/3;
+  }
+  .child5 {
+    grid-column: 3/5;
+  }
+  .child6 {
+    grid-column: 1/5;
+  }
+  .child7 {
+    grid-column: 1/5;
+  }
+  .child8 {
+    grid-column: 1/5;
+  }
+}
+@media screen and (max-width: 767px) {
+  .parent > div {
+    grid-column: 1/5;
+  }
+} */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "child1 child1 child1 child1"
+    "child2 child3 child4 child5"
+    "child6 child6 child7 child7"
+    "child8 child8 child8 child8";
+  gap: 12px;
+}
+.parent > div {
+  background-color: #f3f3f3;
+  border: solid 1px;
+  border-radius: 4px;
+}
+.child1 {
+  grid-area: child1;
+}
+.child2 {
+  grid-area: child2;
+}
+.child3 {
+  grid-area: child3;
+}
+.child4 {
+  grid-area: child4;
+}
+.child5 {
+  grid-area: child5;
+}
+.child6 {
+  grid-area: child6;
+}
+.child7 {
+  grid-area: child7;
+}
+.child8 {
+  grid-area: child8;
+}
+@media screen and (min-width: 767.1px) and (max-width: 1000px) {
+  .parent {
+    grid-template-areas:
+      "child1 child1 child1 child1"
+      "child2 child2 child3 child3"
+      "child4 child4 child5 child5"
+      "child6 child6 child6 child6"
+      "child7 child7 child7 child7"
+      "child8 child8 child8 child8";
+  }
+}
+@media screen and (max-width: 767px) {
+  .parent {
+    grid-template-areas:
+      "child1 child1 child1 child1"
+      "child2 child2 child2 child2"
+      "child3 child3 child3 child3"
+      "child4 child4 child4 child4"
+      "child5 child5 child5 child5"
+      "child6 child6 child6 child6"
+      "child7 child7 child7 child7"
+      "child8 child8 child8 child8";
+  }
+}
