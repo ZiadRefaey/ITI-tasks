@@ -1,0 +1,6 @@
+@use "../abstract/variables" as vars;
+
+body {
+  font-family: vars.$font-main;
+  color: vars.$color-text-dark;
+}

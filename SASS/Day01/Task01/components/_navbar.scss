@@ -1,0 +1,46 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixins" as mix;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: vars.$bg-dark-gray;
+  border-radius: 20px;
+  margin-top: 12px;
+  &-logo {
+    @include mix.flex-center-row(8px);
+    img {
+      width: 50px;
+    }
+    span {
+      font-size: 24px;
+    }
+  }
+  &-menu {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+  }
+
+  &-link {
+    @include mix.nav-link-style(false);
+
+    &-active {
+      @include mix.nav-link-style(true);
+    }
+  }
+  .btn-contact {
+    padding: 8px 16px;
+    background-color: vars.$color-text-dark;
+    color: vars.$color-white;
+    border-radius: 8px;
+    transition: all 0.2s all;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

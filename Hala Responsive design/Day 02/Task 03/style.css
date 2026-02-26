@@ -153,13 +153,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
 }
 .nav-item {
   color: var(--secondary);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 300;
 }
 .nav-item:hover {
   color: var(--primary);
@@ -215,6 +215,14 @@ nav {
 .headline {
   font-size: 5rem;
   font-weight: bold;
+  background-image: url("./assets/bg-texure");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover; /* */
+
+  /* 3. Clip the background to the text area */
+  background-clip: text; /* */
+  color: transparent; /* */
 }
 .subtag {
   font-weight: 600;
@@ -241,8 +249,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+
   gap: 12px;
   font-size: 1.1rem;
+
   font-weight: lighter;
 }
 .hero-pros > li > i {
@@ -421,11 +431,16 @@ nav {
   .hero-pros > li {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     text-align: start;
     gap: 12px;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
+    width: 100%;
+    max-width: 220px;
     font-weight: lighter;
+  }
+  .CTA {
+    padding: 8px 12px;
   }
 }
 .line {

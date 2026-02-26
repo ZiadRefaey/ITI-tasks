@@ -1,0 +1,32 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixins" as mix;
+
+.services {
+  padding: 100px 5%;
+  background-color: #fafafa;
+
+  &-header {
+    @include mix.flex-center-column;
+    margin-bottom: 4rem;
+  }
+
+  &-title {
+    @include mix.headline-style(2.5rem);
+  }
+
+  &-description {
+    @include mix.tagline-style;
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &-card {
+    @include mix.service-card;
+  }
+}

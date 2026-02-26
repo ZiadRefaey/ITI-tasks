@@ -1,0 +1,20 @@
+.first-image {
+  width: 150px;
+  height: 150px;
+}
+.img-size {
+  width: 100px;
+  height: 100px;
+}
+@media screen and (max-width: 767px) {
+  .first-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 767.1px) {
+  .img-size {
+    width: 150px;
+    height: 150px;
+  }
+}

@@ -1,0 +1,1046 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Waterboat Header</title>
+  </head>
+  <body>
+    <header class="top-header bg-light py-3">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="logo d-flex flex-column">
+            <img src="./assets/logo.png" alt="logo" width="50" />
+          </div>
+
+          <div
+            class="contact-group d-none d-lg-flex gap-4 col justify-content-evenly"
+          >
+            <div class="contact-item d-flex align-items-center gap-2">
+              <div class="icon-circle">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div>
+                <div class="fw-semibold">San Francisco</div>
+                <small class="text-muted">Mountain View, Fake st., CA</small>
+              </div>
+            </div>
+
+            <div class="contact-item d-flex align-items-center gap-2">
+              <div class="icon-circle">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div>
+                <div class="fw-semibold">000 209 392 312</div>
+                <small class="text-muted">Toll free</small>
+              </div>
+            </div>
+
+            <div class="contact-item d-flex align-items-center gap-2">
+              <div class="icon-circle">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div>
+                <div class="fw-semibold">info@gmail.com</div>
+                <small class="text-muted">Gourmadi, 1230 Bariasl</small>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="btn d-lg-none"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+          >
+            <i class="bi bi-list fs-3"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="desktop-nav bg-primary d-none d-lg-block">
+      <div class="container">
+        <ul class="nav justify-content-center py-3 gap-4">
+          <li class="nav-item">
+            <a class="nav-link text-white active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fw-bold text-primary">WATERBOAT</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="list-unstyled d-flex flex-column gap-3">
+          <li><a href="#" class="menu-link">About Us</a></li>
+          <li><a href="#" class="menu-link">Services</a></li>
+          <li><a href="#" class="menu-link">Testimonials</a></li>
+          <li><a href="#" class="menu-link">Blog</a></li>
+          <li><a href="#" class="menu-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          style="width: 30px; height: 4px"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="1"
+          style="width: 30px; height: 4px"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div
+          class="carousel-item active"
+          style="
+            height: 100vh;
+            background:
+              linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+              url(&quot;./assets/hero_1.jpg&quot;) center/cover no-repeat;
+          "
+        >
+          <div class="container h-100">
+            <div
+              class="row h-100 align-items-center justify-content-center justify-content-lg-end"
+            >
+              <div class="col-12 col-lg-6 text-center text-lg-start">
+                <h1
+                  class="display-3 fw-bold text-white mb-3 text-uppercase"
+                  style="letter-spacing: -1px; line-height: 1.1"
+                >
+                  Explore, Discover The Ocean
+                </h1>
+                <p class="text-white opacity-75 mb-4 fs-5 fw-light">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quaerat, in distinctio nostrum laborum sed quisquam voluptate
+                  facilis non.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary btn-lg px-5 py-3 text-uppercase fw-bold rounded-1 border-0"
+                  style="
+                    background-color: #1a8fff;
+                    letter-spacing: 2px;
+                    font-size: 0.9rem;
+                  "
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="carousel-item"
+          style="
+            height: 100vh;
+            background:
+              linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+              url(&quot;./assets/hero_2.jpg&quot;) center/cover no-repeat;
+          "
+        >
+          <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+              <div class="col-12 col-md-10 text-center">
+                <h1 class="display-2 fw-bold text-white mb-3 text-uppercase">
+                  Enjoy The Ocean With Your Family
+                </h1>
+                <p
+                  class="text-white opacity-75 mb-4 fs-5 mx-auto"
+                  style="max-width: 700px"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quaerat, in distinctio nostrum laborum sed quisquam.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary btn-lg px-5 py-3 text-uppercase fw-bold rounded-1 border-0"
+                  style="background-color: #1a8fff"
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev d-none d-lg-flex"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="prev"
+      >
+        <div
+          class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow"
+          style="width: 60px; height: 60px"
+        >
+          <span
+            class="carousel-control-prev-icon invert-filter"
+            style="filter: invert(1)"
+          ></span>
+        </div>
+      </button>
+      <button
+        class="carousel-control-next d-none d-lg-flex"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="next"
+      >
+        <div
+          class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow"
+          style="width: 60px; height: 60px"
+        >
+          <span
+            class="carousel-control-next-icon invert-filter"
+            style="filter: invert(1)"
+          ></span>
+        </div>
+      </button>
+    </div>
+    <section class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+          <img
+            src="./assets/About.jpg"
+            class="img-fluid rounded shadow-sm"
+            alt="Luxury Yacht"
+          />
+        </div>
+
+        <div class="col-12 col-lg-6 ps-lg-5">
+          <h6
+            class="text-primary font-italic mb-2"
+            style="font-family: &quot;Dancing Script&quot;, cursive"
+          >
+            About Us
+          </h6>
+          <h2 class="display-6 fw-bold mb-3">Welcome To Our Website</h2>
+
+          <div class="bg-primary mb-4" style="width: 75px; height: 3px"></div>
+
+          <p class="text-secondary mb-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum,
+            illum, quasi. Odit velit deserunt eligendi unde, enim. Enim fugiat.
+          </p>
+          <p class="text-secondary mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accusantium
+            eius ullam impedit architecto debitis facilis!
+          </p>
+
+          <button class="btn btn-primary px-4 py-2 text-uppercase fw-bold">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="container my-5">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-icon mb-3">
+            <img
+              src="./assets/boat-icon.jpg"
+              alt="Yacht"
+              style="width: 75px; height: auto"
+            />
+          </div>
+          <h4 class="fw-bold">Luxuries Yacht</h4>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-icon mb-3">
+            <img
+              src="./assets/shield-icon.jpg"
+              alt="Experience"
+              style="width: 75px; height: auto"
+            />
+          </div>
+          <h4 class="fw-bold">30 Years of Experience</h4>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-icon mb-3">
+            <img
+              src="./assets/sailor-icon.jpg"
+              style="width: 75px; height: auto"
+              alt="Captain"
+            />
+          </div>
+          <h4 class="fw-bold">Good Captain</h4>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="stats-section text-white text-center py-5"
+      style="
+        background:
+          linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)),
+          url(&quot;./assets/hero_1.jpg&quot;) no-repeat center center fixed;
+        background-size: cover;
+      "
+    >
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-md-4 col-lg">
+            <h2 class="display-4 fw-bold">349</h2>
+            <p class="lead small">Number of Yacht</p>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg">
+            <h2 class="display-4 fw-bold">7000+</h2>
+            <p class="lead small">Customers Satisfied</p>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg">
+            <h2 class="display-4 fw-bold">120</h2>
+            <p class="lead small">Number of Staffs</p>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg">
+            <h2 class="display-4 fw-bold">493</h2>
+            <p class="lead small">Sea Destinations</p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg">
+            <h2 class="display-4 fw-bold">230</h2>
+            <p class="lead small">Professional Sailors</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-light">
+      <header class="text-center mb-5">
+        <p
+          class="text-primary"
+          style="font-family: &quot;Dancing Script&quot;, cursive"
+        >
+          Destination
+        </p>
+        <h2 class="fw-bold">Our Destinations</h2>
+        <div class="bg-primary mx-auto" style="width: 40px; height: 2px"></div>
+      </header>
+
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <figure class="mb-0">
+                <img
+                  src="./assets/hero_1.jpg"
+                  class="card-img-top"
+                  alt="Croatia"
+                />
+              </figure>
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0">
+                    <i class="bi bi-geo-alt-fill text-primary"></i> Croatia —
+                    Columbia
+                  </h5>
+                  <span class="badge bg-primary fs-6">$600</span>
+                </div>
+                <p class="card-text text-muted small">
+                  <i class="bi bi-calendar3"></i> Sep. 05 — Oct. 15
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <figure class="mb-0">
+                <img
+                  src="./assets/hero_2.jpg"
+                  class="card-img-top"
+                  alt="Croatia"
+                />
+              </figure>
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0">
+                    <i class="bi bi-geo-alt-fill text-primary"></i> Croatia —
+                    Columbia
+                  </h5>
+                  <span class="badge bg-primary fs-6">$600</span>
+                </div>
+                <p class="card-text text-muted small">
+                  <i class="bi bi-calendar3"></i> Sep. 05 — Oct. 15
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <figure class="mb-0">
+                <img
+                  src="./assets/hero_1.jpg"
+                  class="card-img-top"
+                  alt="Croatia"
+                />
+              </figure>
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0">
+                    <i class="bi bi-geo-alt-fill text-primary"></i> Croatia —
+                    Columbia
+                  </h5>
+                  <span class="badge bg-primary fs-6">$600</span>
+                </div>
+                <p class="card-text text-muted small">
+                  <i class="bi bi-calendar3"></i> Sep. 05 — Oct. 15
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <figure class="mb-0">
+                <img
+                  src="./assets/hero_2.jpg"
+                  class="card-img-top"
+                  alt="Croatia"
+                />
+              </figure>
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0">
+                    <i class="bi bi-geo-alt-fill text-primary"></i> Croatia —
+                    Columbia
+                  </h5>
+                  <span class="badge bg-primary fs-6">$600</span>
+                </div>
+                <p class="card-text text-muted small">
+                  <i class="bi bi-calendar3"></i> Sep. 05 — Oct. 15
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <figure class="mb-0">
+                <img
+                  src="./assets/hero_1.jpg"
+                  class="card-img-top"
+                  alt="Croatia"
+                />
+              </figure>
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0">
+                    <i class="bi bi-geo-alt-fill text-primary"></i> Croatia —
+                    Columbia
+                  </h5>
+                  <span class="badge bg-primary fs-6">$600</span>
+                </div>
+                <p class="card-text text-muted small">
+                  <i class="bi bi-calendar3"></i> Sep. 05 — Oct. 15
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <figure class="mb-0">
+                <img
+                  src="./assets/hero_2.jpg"
+                  class="card-img-top"
+                  alt="Croatia"
+                />
+              </figure>
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0">
+                    <i class="bi bi-geo-alt-fill text-primary"></i> Croatia —
+                    Columbia
+                  </h5>
+                  <span class="badge bg-primary fs-6">$600</span>
+                </div>
+                <p class="card-text text-muted small">
+                  <i class="bi bi-calendar3"></i> Sep. 05 — Oct. 15
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="booking-section py-5">
+      <div class="container">
+        <div class="row align-items-stretch">
+          <figure class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <img
+              src="/assets/hero_1.jpg"
+              class="img-fluid h-100 object-fit-cover rounded"
+              alt="Couple on yacht"
+            />
+          </figure>
+
+          <div class="col-12 col-lg-6 ps-lg-5">
+            <header class="mb-4">
+              <p
+                class="text-primary mb-1"
+                style="font-family: &quot;Dancing Script&quot;, cursive"
+              >
+                Book Now
+              </p>
+              <h2 class="fw-bold">Book A Yacht</h2>
+              <div class="bg-primary" style="width: 50px; height: 2px"></div>
+            </header>
+
+            <form>
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label class="form-label text-muted small">Full Name:</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label text-muted small"
+                    >Number of People:</label
+                  >
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label text-muted small">Date From:</label>
+                  <input type="date" class="form-control" />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label text-muted small">Date To:</label>
+                  <input type="date" class="form-control" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label text-muted small"
+                    >Yacht You're Interested in:</label
+                  >
+                  <select class="form-select">
+                    <option>Motor Yacht</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label text-muted small"
+                    >Email Address:</label
+                  >
+                  <input type="email" class="form-control" />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label text-muted small"
+                    >Phone Number:</label
+                  >
+                  <input type="tel" class="form-control" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label text-muted small">Notes</label>
+                  <textarea class="form-control" rows="4"></textarea>
+                </div>
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn btn-primary px-5 py-2 fw-bold"
+                  >
+                    BOOK NOW
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <header class="text-center mb-5">
+        <p
+          class="text-primary"
+          style="font-family: &quot;Dancing Script&quot;, cursive"
+        >
+          Team
+        </p>
+        <h2 class="fw-bold">Our Team</h2>
+        <div class="bg-primary mx-auto" style="width: 40px; height: 2px"></div>
+      </header>
+
+      <div class="container text-center">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="position-relative overflow-hidden mb-3">
+              <img
+                src="./assets/person_1.jpg"
+                class="img-fluid"
+                alt="Craig Daniel"
+              />
+              <div
+                class="position-absolute top-50 start-0 translate-middle-y ms-3"
+              >
+                <ul class="list-unstyled d-flex flex-column gap-2">
+                  <li>
+                    <a href="#" class="btn btn-light btn-sm shadow-sm"
+                      ><i class="bi bi-facebook text-primary"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-light btn-sm shadow-sm"
+                      ><i class="bi bi-twitter text-primary"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-light btn-sm shadow-sm"
+                      ><i class="bi bi-linkedin text-primary"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h4 class="fw-bold mb-1">Craig Daniel</h4>
+            <p class="text-primary small">Engineer</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="position-relative overflow-hidden mb-3">
+              <img
+                src="./assets/person_2.jpg"
+                class="img-fluid"
+                alt="Craig Daniel"
+              />
+              <div
+                class="position-absolute top-50 start-0 translate-middle-y ms-3"
+              >
+                <ul class="list-unstyled d-flex flex-column gap-2">
+                  <li>
+                    <a href="#" class="btn btn-light btn-sm shadow-sm"
+                      ><i class="bi bi-facebook text-primary"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-light btn-sm shadow-sm"
+                      ><i class="bi bi-twitter text-primary"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-light btn-sm shadow-sm"
+                      ><i class="bi bi-linkedin text-primary"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h4 class="fw-bold mb-1">Craig Daniel</h4>
+            <p class="text-primary small">Engineer</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="position-relative overflow-hidden mb-3">
+              <img
+                src="./assets/person_3.jpg"
+                class="img-fluid"
+                alt="Craig Daniel"
+              />
+              <div
+                class="position-absolute top-50 start-0 translate-middle-y ms-3"
+              >
+                <ul class="list-unstyled d-flex flex-column gap-2">
+                  <li>
+                    <a href="#" class="btn btn-light btn-sm shadow-sm"
+                      ><i class="bi bi-facebook text-primary"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-light btn-sm shadow-sm"
+                      ><i class="bi bi-twitter text-primary"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-light btn-sm shadow-sm"
+                      ><i class="bi bi-linkedin text-primary"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h4 class="fw-bold mb-1">Craig Daniel</h4>
+            <p class="text-primary small">Engineer</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="position-relative overflow-hidden mb-3">
+              <img
+                src="./assets/person_4.jpg"
+                class="img-fluid"
+                alt="Craig Daniel"
+              />
+              <div
+                class="position-absolute top-50 start-0 translate-middle-y ms-3"
+              >
+                <ul class="list-unstyled d-flex flex-column gap-2">
+                  <li>
+                    <a href="#" class="btn btn-light btn-sm shadow-sm"
+                      ><i class="bi bi-facebook text-primary"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-light btn-sm shadow-sm"
+                      ><i class="bi bi-twitter text-primary"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-light btn-sm shadow-sm"
+                      ><i class="bi bi-linkedin text-primary"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h4 class="fw-bold mb-1">Craig Daniel</h4>
+            <p class="text-primary small">Engineer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials py-5 bg-light">
+      <div class="container text-center mb-5">
+        <p
+          class="text-primary italic-font"
+          style="font-family: &quot;Dancing Script&quot;, cursive"
+        >
+          Testimonials
+        </p>
+        <h2 class="fw-bold">What Our Clients Say</h2>
+        <div class="bg-primary mx-auto" style="width: 50px; height: 2px"></div>
+      </div>
+
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm p-4 h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="./assets/person_3.jpg"
+                  class="rounded-circle me-3"
+                  width="60"
+                  height="60"
+                  alt="Client Name"
+                />
+                <div>
+                  <h6 class="mb-0 fw-bold">John Doe</h6>
+                  <small class="text-primary">Happy Client</small>
+                </div>
+              </div>
+              <p class="text-secondary small italic">
+                "The yacht rental service was absolutely incredible. The crew
+                was professional and the destination was breathtaking."
+              </p>
+              <div class="text-warning small">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm p-4 h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="./assets/person_3.jpg"
+                  class="rounded-circle me-3"
+                  width="60"
+                  height="60"
+                  alt="Client Name"
+                />
+                <div>
+                  <h6 class="mb-0 fw-bold">John Doe</h6>
+                  <small class="text-primary">Happy Client</small>
+                </div>
+              </div>
+              <p class="text-secondary small italic">
+                "The yacht rental service was absolutely incredible. The crew
+                was professional and the destination was breathtaking."
+              </p>
+              <div class="text-warning small">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm p-4 h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="./assets/person_3.jpg"
+                  class="rounded-circle me-3"
+                  width="60"
+                  height="60"
+                  alt="Client Name"
+                />
+                <div>
+                  <h6 class="mb-0 fw-bold">John Doe</h6>
+                  <small class="text-primary">Happy Client</small>
+                </div>
+              </div>
+              <p class="text-secondary small italic">
+                "The yacht rental service was absolutely incredible. The crew
+                was professional and the destination was breathtaking."
+              </p>
+              <div class="text-warning small">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="d-flex align-items-center justify-content-center text-center position-relative"
+      style="
+        height: 40vh;
+        background-image: url(&quot;./assets/hero_1.jpg&quot;);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      "
+    >
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100"
+        style="background-color: rgba(30, 144, 255, 0.75); z-index: 1"
+      ></div>
+
+      <div class="container position-relative text-white" style="z-index: 2">
+        <div class="row justify-content-center">
+          <div class="col-11 col-md-10 col-lg-8">
+            <h1 class="fw-bold mb-3 display-6 display-md-4 text-uppercase">
+              Get In Touch With Us
+            </h1>
+
+            <p
+              class="lead mb-4 mx-auto"
+              style="max-width: 600px; font-weight: 300"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+
+            <a
+              href="#"
+              class="btn btn-lg px-5 py-3 text-uppercase fw-bold border-0 shadow-sm"
+              style="
+                background-color: #ff9f43;
+                color: white;
+                border-radius: 4px;
+              "
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-light pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+            <img
+              src="./assets/logo.png"
+              alt="Logo"
+              class="mb-2"
+              style="width: 50px"
+            />
+            <h5
+              class="fw-bold mb-3"
+              style="color: #4da3ff; letter-spacing: 1px"
+            >
+              WATERBOAT
+            </h5>
+            <p class="text-muted small">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              nemo minima qui dolor, iusto iure.
+            </p>
+            <a
+              href="#"
+              class="text-decoration-none small"
+              style="color: #4da3ff"
+              >Learn More</a
+            >
+          </div>
+
+          <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+            <h6
+              class="fw-bold mb-4 position-relative d-inline-block pb-1"
+              style="border-bottom: 2px solid #4da3ff"
+            >
+              OUR COMPANY
+            </h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >About</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >News</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >Our Team</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+            <h6
+              class="fw-bold mb-4 position-relative d-inline-block pb-1"
+              style="border-bottom: 2px solid #4da3ff"
+            >
+              OUR SERVICES
+            </h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >Industrial</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >Construction</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >Remodeling</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <h6
+              class="fw-bold mb-4 position-relative d-inline-block pb-1"
+              style="border-bottom: 2px solid #4da3ff"
+            >
+              CONTACT
+            </h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >Help Center</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >Support Community</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >Press</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #7abaff"
+                  >Our Partners</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="mt-5 mb-4 text-muted" />
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="text-muted small">
+              Copyright &copy;2026 All rights reserved | This template is made
+              with
+              <span style="color: red">&#10084;</span> by
+              <a href="#" class="text-decoration-none" style="color: #7abaff"
+                >Colorlib</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

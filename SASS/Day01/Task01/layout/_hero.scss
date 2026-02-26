@@ -1,0 +1,41 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixins" as mix;
+
+.hero {
+  padding: 80px 5%;
+  @include mix.flex-center-column;
+
+  &-breadcrumb {
+    font-size: 0.9rem;
+    color: vars.$color-primary;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  &-title {
+    @include mix.headline-style(3.5rem);
+
+    span {
+      color: vars.$color-primary;
+    }
+  }
+
+  &-description {
+    @include mix.tagline-style;
+  }
+
+  &-image-container {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 3rem;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
