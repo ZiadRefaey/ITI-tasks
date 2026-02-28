@@ -1,0 +1,17 @@
+<div class="card col">
+  <img class="card-img-top" [src]="src" alt="Card image cap" style="max-height: 500px" />
+  <div class="card-body">
+    <h5 class="card-title">{{ info.title }}</h5>
+    <p class="card-text">
+      {{ info.desc }}
+    </p>
+    <div class="d-flex justify-content-between gap-4">
+      <button class="btn btn-primary w-100" (click)="sendData('Data coming from child')">
+        Send Data-1 to parent
+      </button>
+      <button class="btn btn-secondary w-100" (click)="sendData2('Data 2 coming from child')">
+        Send Data-2 to parent
+      </button>
+    </div>
+  </div>
+</div>

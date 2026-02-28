@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <input type="text" class="w-100 my-2" [(ngModel)]="desc1" />
+      <button class="mb-5 btn btn-primary w-100" (click)="setDesc1(desc1)">Set Descreption</button>
+      <app-card
+        [info]="info1"
+        [src]="cardOneSrc"
+        (data2ToSend)="receiveData($event)"
+        (dataToSend)="receiveData($event)"
+      ></app-card>
+    </div>
+    <div class="col-6">
+      <input type="text" class="w-100 my-2" [(ngModel)]="desc2" />
+      <button class="mb-5 btn btn-primary w-100" (click)="setDesc2(desc2)">Set Descreption</button>
+      <app-card
+        [info]="info2"
+        [src]="cardTwoSrc"
+        (dataToSend)="receiveData($event)"
+        (data2ToSend)="receiveData($event)"
+      ></app-card>
+    </div>
+    <p>{{ dataFromChild }}</p>
+  </div>
+</div>
