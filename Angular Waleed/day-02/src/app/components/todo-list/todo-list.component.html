@@ -1,0 +1,5 @@
+<div class="w-7xl overflow-y-hidden flex-1 mx-auto py-4 gap-2 flex flex-col">
+  @for (item of todoList; track item.title) {
+    <app-todo-item [todoInfo]="item"></app-todo-item>
+  }
+</div>
