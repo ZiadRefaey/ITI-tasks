@@ -8,8 +8,37 @@ import { ToDoService } from '../../services/to-do-service.service';
   styleUrl: './todo-list.component.css',
 })
 export class TodoListComponent {
-  private todos = inject(ToDoService);
+  private todosSerice = inject(ToDoService);
   get todoList() {
-    return this.todos.todoList;
+    return this.todosSerice.todoList;
+  }
+  createTodo() {
+    // this.http.post('', { title: 'make one billion dollars', date: new Date(), isChecked: false });
+    this.todosSerice
+      .createTodo({
+        title: 'make one billion dollars',
+        date: new Date(),
+        isChecked: false,
+      })
+      .subscribe({
+        next: (res) => {
+          console.log('todo added', res);
+        },
+      });
+  }
+
+  displayTodos() {
+    this.todosSerice.getTodos().subscribe({
+      next: (res) => {
+        console.log(res);
+      },
+    });
+  }
+  deleteTodo(id: string) {
+    this.todosSerice.deleteTodo(id).subscribe({
+      next: (res) => {
+        console.log('successfully deleted', res);
+      },
+    });
   }
 }
